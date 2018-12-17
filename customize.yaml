@@ -9,3 +9,12 @@ sensor.speedtest_upload:
 sensor.speedtest_ping:
   friendly_name: Ping
   icon: mdi:mixcloud
+
+sensor.darksky_cloud_coverage:
+  friendly_name: "Cloud Coverage"
+sensor.darksky_humidity:
+  friendly_name: "Humidity"
+sensor.darksky_pressure:
+  friendly_name: "Pressure"
+sensor.darksky_temperature:
+  friendly_name: "Temperature"

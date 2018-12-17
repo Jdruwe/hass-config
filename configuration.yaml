@@ -13,9 +13,6 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
 
-# Show links to resources in log and frontend
-introduction:
-
 # Enables the frontend
 frontend:
 
@@ -50,13 +47,8 @@ logbook:
 # Enables a map showing the location of tracked devices
 map:
 
-# Track the sun
-sun:
-
 # Sensors
 sensor:
-  # Weather prediction
-  - platform: yr
   - platform: speedtest
     monitored_conditions:
     - ping
@@ -67,6 +59,18 @@ sensor:
     - 15
     - 30
     - 45
+  - platform: darksky
+    api_key: !secret darksky_api
+    latitude: 51.168957
+    longitude: 4.456604
+    name: DarkSky
+    monitored_conditions:
+    - temperature
+    - cloud_cover
+    - humidity
+    - pressure
+    - temperature_high
+    - temperature_low
 
 # Text to speech
 tts:
