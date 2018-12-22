@@ -9,8 +9,8 @@ history:
 logbook:
 map:
 
-sensor: !include_dir_list config/sensors
 group: !include_dir_merge_named config/groups
 automation: !include_dir_list config/automations
+sensor: !include_dir_list config/sensors
 script: !include config/scripts.yaml
 tts: !include config/tts.yaml
