@@ -1,0 +1,10 @@
+platform: darksky
+api_key: !secret darksky_api
+name: DarkSky
+monitored_conditions:
+- temperature
+- cloud_cover
+- humidity
+- pressure
+- temperature_high
+- temperature_low

@@ -1,0 +1,7 @@
+weather:
+  name: Weather
+  entities:
+  - sensor.darksky_temperature
+  - sensor.darksky_humidity
+  - sensor.darksky_pressure
+  - sensor.darksky_cloud_coverage
