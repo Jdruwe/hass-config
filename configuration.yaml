@@ -14,3 +14,4 @@ automation: !include_dir_list config/automations
 sensor: !include_dir_list config/sensors
 script: !include config/scripts.yaml
 tts: !include config/tts.yaml
+panel_iframe: !include config/panel_iframe.yaml

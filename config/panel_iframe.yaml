@@ -1,0 +1,4 @@
+nodered:
+  title: 'Node-Red'
+  icon: 'mdi:nodejs'
+  url: !secret node-red_address
