@@ -4,6 +4,8 @@ frontend:
 config:
 updater:
 discovery:
+  ignore:
+  - sonos
 conversation:
 history:
 logbook:
@@ -14,4 +16,19 @@ automation: !include_dir_list config/automations
 sensor: !include_dir_list config/sensors
 script: !include config/scripts.yaml
 tts: !include config/tts.yaml
-panel_iframe: !include config/panel_iframe.yaml
+#panel_iframe: !include config/panel_iframe.yaml
+
+recorder:
+  purge_keep_days: 2
+
+http:
+  base_url: !secret base_url
+
+logger:
+  default: error
+  logs:
+    homeassistant.components.media_player.sony: debug
+
+sonos:
+  media_player:
+    hosts: !secret sonos-speaker_address
